@@ -9,7 +9,7 @@ class Injector {
 
 	public function __construct (Container $c, $depth = 1) {
 		$this->C = $c;
-		$this->Depth = 1;
+		$this->Depth = $depth;
 	}
 
 	public function construct ($class) {
